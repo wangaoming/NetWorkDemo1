@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HttpActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="540dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="网络请求结果"
+            android:textSize="30dp"
+            android:id="@+id/net"
+            />
+
+    </ScrollView>
+    <ImageView
+        android:id="@+id/tupian"
+        android:layout_width="match_parent"
+        android:layout_height="540dp"
+        android:layout_marginTop="10dp"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET请求"
+            android:layout_weight="1"
+            android:id="@+id/get"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="POST请求"
+            android:layout_weight="1"
+            android:id="@+id/post"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上传文件"
+            android:layout_weight="1"
+            android:id="@+id/up"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="下载文件"
+            android:layout_weight="1"
+            android:id="@+id/down"
+            />
+
+    </LinearLayout>
+</LinearLayout>
